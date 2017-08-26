@@ -15,6 +15,7 @@
 		5E14FCEF1E94F09D002EEBD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E14FCED1E94F09D002EEBD4 /* LaunchScreen.storyboard */; };
 		5E14FCFF1E95D2D0002EEBD4 /* XLPaymentSuccessHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FCFE1E95D2D0002EEBD4 /* XLPaymentSuccessHUD.m */; };
 		5E14FD021E95D573002EEBD4 /* XLPaymentLoadingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FD011E95D573002EEBD4 /* XLPaymentLoadingHUD.m */; };
+		B2315B561F51749D00A6DAB0 /* XLPaymentFailureHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B2315B551F51749D00A6DAB0 /* XLPaymentFailureHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		5E14FCFE1E95D2D0002EEBD4 /* XLPaymentSuccessHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPaymentSuccessHUD.m; sourceTree = "<group>"; };
 		5E14FD001E95D573002EEBD4 /* XLPaymentLoadingHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPaymentLoadingHUD.h; sourceTree = "<group>"; };
 		5E14FD011E95D573002EEBD4 /* XLPaymentLoadingHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPaymentLoadingHUD.m; sourceTree = "<group>"; };
+		B2315B541F51749D00A6DAB0 /* XLPaymentFailureHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPaymentFailureHUD.h; sourceTree = "<group>"; };
+		B2315B551F51749D00A6DAB0 /* XLPaymentFailureHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPaymentFailureHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +92,12 @@
 		5E14FCF61E94F0AD002EEBD4 /* XLPaymentHUD */ = {
 			isa = PBXGroup;
 			children = (
-				5E14FCFD1E95D2D0002EEBD4 /* XLPaymentSuccessHUD.h */,
-				5E14FCFE1E95D2D0002EEBD4 /* XLPaymentSuccessHUD.m */,
 				5E14FD001E95D573002EEBD4 /* XLPaymentLoadingHUD.h */,
 				5E14FD011E95D573002EEBD4 /* XLPaymentLoadingHUD.m */,
+				5E14FCFD1E95D2D0002EEBD4 /* XLPaymentSuccessHUD.h */,
+				5E14FCFE1E95D2D0002EEBD4 /* XLPaymentSuccessHUD.m */,
+				B2315B541F51749D00A6DAB0 /* XLPaymentFailureHUD.h */,
+				B2315B551F51749D00A6DAB0 /* XLPaymentFailureHUD.m */,
 			);
 			path = XLPaymentHUD;
 			sourceTree = "<group>";
@@ -128,7 +133,8 @@
 				TargetAttributes = {
 					5E14FCDB1E94F09D002EEBD4 = {
 						CreatedOnToolsVersion = 8.3;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 9H9JD2FE9G;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -171,6 +177,7 @@
 				5E14FCE71E94F09D002EEBD4 /* ViewController.m in Sources */,
 				5E14FCFF1E95D2D0002EEBD4 /* XLPaymentSuccessHUD.m in Sources */,
 				5E14FCE41E94F09D002EEBD4 /* AppDelegate.m in Sources */,
+				B2315B561F51749D00A6DAB0 /* XLPaymentFailureHUD.m in Sources */,
 				5E14FCE11E94F09D002EEBD4 /* main.m in Sources */,
 				5E14FD021E95D573002EEBD4 /* XLPaymentLoadingHUD.m in Sources */,
 			);
@@ -295,13 +302,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: xianliang meng (79SX5888C3)";
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9H9JD2FE9G;
 				INFOPLIST_FILE = XLPaymentHUDExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mxl.XLPaymentHUDExample;
+				PRODUCT_BUNDLE_IDENTIFIER = shawn.mxl.XLPaymentHUDExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "63d0bee2-4f74-4b71-a719-620d70b5a076";
-				PROVISIONING_PROFILE_SPECIFIER = mxlDev;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -310,13 +318,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: xianliang meng (79SX5888C3)";
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9H9JD2FE9G;
 				INFOPLIST_FILE = XLPaymentHUDExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mxl.XLPaymentHUDExample;
+				PRODUCT_BUNDLE_IDENTIFIER = shawn.mxl.XLPaymentHUDExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "63d0bee2-4f74-4b71-a719-620d70b5a076";
-				PROVISIONING_PROFILE_SPECIFIER = mxlDev;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
